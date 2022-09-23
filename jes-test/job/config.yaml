@@ -1,0 +1,12 @@
+apiVersion: v2
+actions:
+  - name: "Respond to foo"
+    events:
+      - name: "sh.keptn.event.task-foo.triggered"
+    tasks:
+      - name: "Say bar"
+        image: "alpine"
+        cmd:
+          - echo
+        args:
+          - "bar"
